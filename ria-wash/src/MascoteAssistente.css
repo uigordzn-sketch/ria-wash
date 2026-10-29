@@ -1,0 +1,124 @@
+
+.ria-assistente {
+  position: fixed;
+  right: 20px;
+  bottom: 16px;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  font-family: inherit;
+}
+
+.ria-assistente-botao {
+  width: 130px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.ria-assistente-botao:hover {
+  transform: scale(1.05);
+}
+
+.ria-assistente-botao img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.18));
+}
+
+.ria-assistente-dica {
+  padding: 9px 14px;
+  border-radius: 20px;
+  background: #123d70;
+  color: #ffffff;
+  font-size: 13px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.ria-assistente-painel {
+  width: min(320px, calc(100vw - 28px));
+  margin-bottom: 4px;
+  overflow: hidden;
+  border: 1px solid #dbe5f0;
+  border-radius: 16px;
+  background: #ffffff;
+  color: #18324d;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18);
+}
+
+.ria-assistente-cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  background: #123d70;
+  color: #ffffff;
+}
+
+.ria-assistente-cabecalho strong,
+.ria-assistente-cabecalho span {
+  display: block;
+}
+
+.ria-assistente-cabecalho span {
+  margin-top: 4px;
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+.ria-assistente-fechar {
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.ria-assistente-conteudo {
+  padding: 16px;
+}
+
+.ria-assistente-conteudo p {
+  margin: 0 0 14px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.ria-assistente-opcoes {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ria-assistente-opcoes button {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #dbe5f0;
+  border-radius: 10px;
+  background: #f5f8fc;
+  color: #123d70;
+  text-align: left;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.ria-assistente-opcoes button:hover {
+  background: #e5eef9;
+}
+
+@media (max-width: 600px) {
+  .ria-assistente {
+    right: 8px;
+    bottom: 10px;
+  }
+
+  .ria-assistente-botao {
+    width: 95px;
+  }
+}
